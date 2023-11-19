@@ -1,3 +1,12 @@
-res://actors/player.tscn
-res://actors/player.gd
+res://world_02.tscn
+res://Card.gd
+res://Game.gd
+res://world_2.tscn
+res://CardDisplay.gd
 res://levels/world_01.tscn
+res://carta_almas.gd
+res://carta_camaleao.gd
+res://carta_cavalo.gd
+res://carta_gorgona.gd
+res://carta_unicornio.gd
+res://world_02.gd

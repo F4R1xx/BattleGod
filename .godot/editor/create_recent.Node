@@ -1,3 +1,10 @@
+Node2D
+TextureRect
+Control
+Sprite2D
+Node
+Button
+LinkButton
 CollisionShape2D
 AnimationPlayer
 TileMap

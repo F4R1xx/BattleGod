@@ -1,0 +1,21 @@
+extends Sprite2D
+
+var card_id : int
+
+func _ready():
+	set_process_input(true)
+
+func setup_card(id: int):
+	card_id = id
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		# Verifique se o clique do mouse ocorreu dentro do sprite
+		var local_click_position = to_local(event.global_position)
+		if get_rect().has_point(local_click_position):
+			# Mova o nó para o centro da tela
+			var center_position = get_viewport().size / 2
+			global_position = center_position
+
+			# Emita o sinal para notificar o nó pai que a carta foi clicada, passando o ID como argumento
+			emit_signal("card_clicked", card_id)

@@ -1,0 +1,59 @@
+[gd_scene load_steps=14 format=3 uid="uid://rb1p07elj5f5"]
+
+[ext_resource type="Script" path="res://world_02.gd" id="1_fhym8"]
+[ext_resource type="Texture2D" uid="uid://c4i51loyfc7pw" path="res://img_inventario/Captura de tela 2023-11-18 203919.png" id="1_i02vu"]
+[ext_resource type="Texture2D" uid="uid://k8xa7q7jpmux" path="res://img_inventario/opcoes.png" id="2_2meql"]
+[ext_resource type="Texture2D" uid="uid://cm26cyoxtv87w" path="res://img_inventario/cavalos_de_fogo.png" id="3_wbddj"]
+[ext_resource type="Texture2D" uid="uid://de31wr0cimlvq" path="res://img_inventario/camaleoes_diplomaticos.png" id="4_f1dl7"]
+[ext_resource type="Texture2D" uid="uid://bero2ehvlv0l7" path="res://img_inventario/almas_penadas.png" id="5_7ayp8"]
+[ext_resource type="Script" path="res://carta_cavalo.gd" id="5_onovd"]
+[ext_resource type="Texture2D" uid="uid://qdt6mif7ue6b" path="res://img_inventario/unicornios_da_beleza.png" id="6_4t1ku"]
+[ext_resource type="Texture2D" uid="uid://dhm1612nblkcf" path="res://img_inventario/gorgonas_da_justica.png" id="7_0w64b"]
+[ext_resource type="Script" path="res://carta_camaleao.gd" id="7_0xy0n"]
+[ext_resource type="Script" path="res://carta_almas.gd" id="9_whovo"]
+[ext_resource type="Script" path="res://carta_unicornio.gd" id="11_yhbd7"]
+[ext_resource type="Script" path="res://carta_gorgona.gd" id="13_8bcyv"]
+
+[node name="World-02" type="Node2D"]
+position = Vector2(-525, -382)
+script = ExtResource("1_fhym8")
+
+[node name="background-inventario" type="Sprite2D" parent="."]
+position = Vector2(1066, 742)
+scale = Vector2(0.786237, 0.927083)
+texture = ExtResource("1_i02vu")
+
+[node name="catalogo" type="Sprite2D" parent="."]
+position = Vector2(1428, 752)
+scale = Vector2(0.7657, 0.897699)
+texture = ExtResource("2_2meql")
+
+[node name="carta_cavalo" type="Sprite2D" parent="."]
+position = Vector2(1360, 555)
+scale = Vector2(0.541359, 0.539952)
+texture = ExtResource("3_wbddj")
+script = ExtResource("5_onovd")
+
+[node name="carta_camaleao" type="Sprite2D" parent="."]
+position = Vector2(1468, 556)
+scale = Vector2(0.511628, 0.567074)
+texture = ExtResource("4_f1dl7")
+script = ExtResource("7_0xy0n")
+
+[node name="carta_almas" type="Sprite2D" parent="."]
+position = Vector2(1523, 556)
+scale = Vector2(0.566178, 0.561992)
+texture = ExtResource("5_7ayp8")
+script = ExtResource("9_whovo")
+
+[node name="carta_unicornio" type="Sprite2D" parent="."]
+position = Vector2(1414, 555)
+scale = Vector2(0.511628, 0.54065)
+texture = ExtResource("6_4t1ku")
+script = ExtResource("11_yhbd7")
+
+[node name="carta_gorgona" type="Sprite2D" parent="."]
+position = Vector2(1302, 555)
+scale = Vector2(0.534883, 0.542683)
+texture = ExtResource("7_0w64b")
+script = ExtResource("13_8bcyv")

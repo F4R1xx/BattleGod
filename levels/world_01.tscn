@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://ce77idxbdqiad"]
+[gd_scene load_steps=23 format=3 uid="uid://ce77idxbdqiad"]
 
 [ext_resource type="Texture2D" uid="uid://pkhvmulkktsw" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_ahrrp"]
 [ext_resource type="Texture2D" uid="uid://djx7uj12l7ykx" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Metal_Wire_fence (16 x 16).png" id="2_1nv25"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://mvx15u8rbebj" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png" id="4_txrh0"]
 [ext_resource type="Texture2D" uid="uid://be3vsjphj3vvp" path="res://assets/Teste/AssetCenario1.png" id="5_laeu2"]
 [ext_resource type="Texture2D" uid="uid://cfuxxdvcifjtk" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/_Complete_static_BG_(288 x 208).png" id="8_y1r23"]
+[ext_resource type="PackedScene" uid="uid://rb1p07elj5f5" path="res://world_02.tscn" id="11_e6amg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6px65"]
 texture = ExtResource("1_ahrrp")
@@ -6845,3 +6846,5 @@ shape = SubResource("RectangleShape2D_gin4q")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1120.5, 352)
 shape = SubResource("RectangleShape2D_gin4q")
+
+[node name="World-02" parent="." instance=ExtResource("11_e6amg")]

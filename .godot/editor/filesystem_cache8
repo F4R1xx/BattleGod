@@ -1,9 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700372789
-Card.gd::GDScript::-1::1700369495::0::1::::<>Node<>::
-Game.gd::GDScript::-1::1700371875::0::1::::<>Node<>::
+::res://::1700572228
+Card.gd::GDScript::-1::1700409497::0::1::::<>RefCounted<>::
+CardDisplay.gd::GDScript::-1::1700374719::0::1::::<>Control<>::
+carta_almas.gd::GDScript::-1::1700414119::0::1::::<>Sprite2D<>::
+carta_camaleao.gd::GDScript::-1::1700414119::0::1::::<>Sprite2D<>::
+carta_cavalo.gd::GDScript::-1::1700414119::0::1::::<>Sprite2D<>::
+carta_gorgona.gd::GDScript::-1::1700414119::0::1::::<>Sprite2D<>::
+carta_unicornio.gd::GDScript::-1::1700414119::0::1::::<>Sprite2D<>::
+Game.gd::GDScript::-1::1700409520::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::6998468547443230831::1700347474::1700347609::1::::<><>::
-world_02.tscn::PackedScene::1196881511035436728::1700350252::0::1::::<><>::
+world_02.gd::GDScript::-1::1700413719::0::1::::<>Node2D<>::
+world_02.tscn::PackedScene::1196881511035436728::1700572228::0::1::::<><>::res://world_02.gd<>uid://c4i51loyfc7pw::::res://img_inventario/Captura de tela 2023-11-18 203919.png<>uid://k8xa7q7jpmux::::res://img_inventario/opcoes.png<>uid://cm26cyoxtv87w::::res://img_inventario/cavalos_de_fogo.png<>uid://de31wr0cimlvq::::res://img_inventario/camaleoes_diplomaticos.png<>uid://bero2ehvlv0l7::::res://img_inventario/almas_penadas.png<>res://carta_cavalo.gd<>uid://qdt6mif7ue6b::::res://img_inventario/unicornios_da_beleza.png<>uid://dhm1612nblkcf::::res://img_inventario/gorgonas_da_justica.png<>res://carta_camaleao.gd<>res://carta_almas.gd<>res://carta_unicornio.gd<>res://carta_gorgona.gd
+world_2.tscn::PackedScene::4140444749461889794::1700413720::0::1::::<><>::res://Card.gd<>res://Game.gd<>res://CardDisplay.gd
 ::res://actors/::1700347474
 player.gd::GDScript::-1::1700347474::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::1371908603867356612::1700347474::0::1::::<><>::res://scripts/player.gd<>uid://csfvfme5pemht
@@ -145,15 +153,16 @@ Reaching_to_Pinch (32 x 32).png::CompressedTexture2D::8752699485236275366::17003
 ::res://assets/Teste/::1700347474
 AssetCenario1.png::CompressedTexture2D::2726286332710706237::1700347474::1700347474::1::::<><>::
 grama.jpg::CompressedTexture2D::4374634161314418774::1700347474::1700347474::1::::<><>::
-::res://img_inventario/::1700372789
+::res://img_inventario/::1700606203
 almas_penadas.png::CompressedTexture2D::2703168956275139250::1700352437::1700372700::1::::<><>::
+background.png::CompressedTexture2D::8550117018341318877::1700606142::1700606209::1::::<><>::
 camaleoes_diplomaticos.png::CompressedTexture2D::7499438863642051686::1700352426::1700372745::1::::<><>::
 Captura de tela 2023-11-18 203919.png::CompressedTexture2D::6826701395827502068::1700350757::1700370552::1::::<><>::
 cavalos_de_fogo.png::CompressedTexture2D::5672732772024709906::1700352416::1700372614::1::::<><>::
 gorgonas_da_justica.png::CompressedTexture2D::7676991898926490809::1700352327::1700372670::1::::<><>::
 opcoes.png::CompressedTexture2D::771411100028565111::1700351995::1700370552::1::::<><>::
 unicornios_da_beleza.png::CompressedTexture2D::1130424256853680751::1700352447::1700372789::1::::<><>::
-::res://levels/::1700347474
-world_01.tscn::PackedScene::5121614253338645043::1700347474::0::1::::<><>::uid://pkhvmulkktsw
+::res://levels/::1700572226
+world_01.tscn::PackedScene::5121614253338645043::1700572226::0::1::::<><>::uid://pkhvmulkktsw::::res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png<>uid://djx7uj12l7ykx::::res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Metal_Wire_fence (16 x 16).png<>uid://beriuemj5bj84::::res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png<>res://actors/player.gd<>uid://bvx2n51034xwl::::res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png<>uid://b3ldt53j1oqv3::::res://assets/Teste/grama.jpg<>uid://tstethijrr6k::::res://actors/player.tscn<>uid://mvx15u8rbebj::::res://assets/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png<>uid://be3vsjphj3vvp::::res://assets/Teste/AssetCenario1.png<>uid://cfuxxdvcifjtk::::res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/_Complete_static_BG_(288 x 208).png<>uid://rb1p07elj5f5::::res://world_02.tscn
 ::res://scripts/::1700347474
 player.gd::GDScript::-1::1700347474::0::1::::<>CharacterBody2D<>::

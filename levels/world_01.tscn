@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ce77idxbdqiad"]
+[gd_scene load_steps=25 format=3 uid="uid://ce77idxbdqiad"]
 
 [ext_resource type="Texture2D" uid="uid://pkhvmulkktsw" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_ahrrp"]
 [ext_resource type="Texture2D" uid="uid://djx7uj12l7ykx" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Metal_Wire_fence (16 x 16).png" id="2_1nv25"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://be3vsjphj3vvp" path="res://assets/Teste/AssetCenario1.png" id="5_laeu2"]
 [ext_resource type="Texture2D" uid="uid://cfuxxdvcifjtk" path="res://assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/_Complete_static_BG_(288 x 208).png" id="8_y1r23"]
 [ext_resource type="PackedScene" uid="uid://rb1p07elj5f5" path="res://world_02.tscn" id="11_e6amg"]
+[ext_resource type="AudioStream" uid="uid://xkbbka5lidxt" path="res://sound/nature-soundstropicaljunglebirds-108380.mp3" id="12_jj6qp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6px65"]
 texture = ExtResource("1_ahrrp")
@@ -6767,6 +6768,8 @@ size = Vector2(1173.63, 54.7188)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gin4q"]
 size = Vector2(61, 729)
 
+[sub_resource type="AudioStream" id="AudioStream_dxjle"]
+
 [node name="World-01" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
@@ -6848,3 +6851,13 @@ position = Vector2(1120.5, 352)
 shape = SubResource("RectangleShape2D_gin4q")
 
 [node name="World-02" parent="." instance=ExtResource("11_e6amg")]
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AudioListener2D"]
+stream = SubResource("AudioStream_dxjle")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioListener2D"]
+stream = ExtResource("12_jj6qp")
+volume_db = -9.477
+autoplay = true

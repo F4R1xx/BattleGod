@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
-
+@onready var step_sound = $step_sound as AudioStreamPlayer
 @onready var animation := $anime as AnimatedSprite2D
 
 func _physics_process(delta):
@@ -32,18 +32,23 @@ func _physics_process(delta):
 		animation.play("walk_up")
 		
 	elif direction > 0 and direction2 > 0:
+		step_sound.play()
 		animation.play("run")
 		
 	elif direction < 0 and direction2 < 0:
+		step_sound.play()
 		animation.play("run")
 		
 	elif direction > 0 and direction2 < 0:
+		step_sound.play()
 		animation.play("run")
 		
 	elif direction < 0 and direction2 > 0:
+		step_sound.play()
 		animation.play("run")
 
 	if direction == 0 and direction2 == 0:
+		step_sound.play()
 		animation.play("idle")
 
 	move_and_slide()

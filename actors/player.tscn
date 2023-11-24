@@ -1,7 +1,8 @@
-[gd_scene load_steps=34 format=3 uid="uid://tstethijrr6k"]
+[gd_scene load_steps=35 format=3 uid="uid://tstethijrr6k"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_r8s8w"]
 [ext_resource type="Texture2D" uid="uid://csfvfme5pemht" path="res://assets/PersonagemAssets.png" id="2_unnqk"]
+[ext_resource type="AudioStream" uid="uid://bvfebsa3m83sj" path="res://assets/audio/going-on-a-forest-road-gravel-and-grass-6404.mp3" id="3_q5e2y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wefuv"]
 size = Vector2(20, 26)
@@ -254,3 +255,7 @@ autoplay = "idle"
 frame_progress = 0.957226
 
 [node name="animator" type="AnimationPlayer" parent="."]
+
+[node name="step_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_q5e2y")
+volume_db = -10.0

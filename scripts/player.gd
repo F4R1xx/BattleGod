@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
-
+@onready var step_sound = $step_sound as AudioStreamPlayer
 @onready var animation := $anime as AnimatedSprite2D
 
 func _physics_process(delta):
@@ -13,6 +13,7 @@ func _physics_process(delta):
 	if direction2:
 		velocity.y = direction2 * SPEED
 		animation.play("walk_up")
+		step_sound.play()
 	else:
 		velocity.y = move_toward(velocity.x, 0, SPEED)
 		
@@ -21,6 +22,7 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
+		step_sound.play()
 		velocity.x = direction * SPEED
 		animation.play("run")
 	else:

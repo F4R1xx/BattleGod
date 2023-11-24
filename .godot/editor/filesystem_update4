@@ -1,7 +1,5 @@
 res://levels/world_01.tscn
 res://world_02.tscn
-res://CavalosDeFogo.gd
-res://GorgonasDaJustica.gd
-res://AlmasPenadas.gd
-res://UnicorniosDaBeleza.gd
-res://CamaleoesDiplomaticos.gd
+res://actors/player.tscn
+res://scripts/player.gd
+res://actors/player.gd

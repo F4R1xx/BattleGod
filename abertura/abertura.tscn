@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4hi31apdg2mu"]
+
+[ext_resource type="Script" path="res://abertura.gd" id="1_dkt8j"]
+[ext_resource type="Texture2D" uid="uid://byghjw4gxf8rv" path="res://Interface.png" id="1_qilhs"]
+[ext_resource type="Texture2D" uid="uid://ck1kpafahl28a" path="res://engrenagem.png" id="2_k8htu"]
+[ext_resource type="AudioStream" uid="uid://dnm0cb5cy1hut" path="res://sounds/grecia-120640 (online-audio-converter.com).ogg" id="4_ul1kk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8cg4"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Abertura" type="Node2D"]
+script = ExtResource("1_dkt8j")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m8cg4")
+
+[node name="Interface" type="Sprite2D" parent="Panel"]
+position = Vector2(575, 324)
+scale = Vector2(0.601042, 0.6)
+texture = ExtResource("1_qilhs")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -33.5
+offset_right = 75.0
+offset_bottom = 33.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jogar"
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1044.0
+offset_top = 14.0
+offset_right = 1122.0
+offset_bottom = 92.0
+icon = ExtResource("2_k8htu")
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ul1kk")
+
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_button_configuracao_pressed"]

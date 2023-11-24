@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://s44ftit4vjot"]
+
+[ext_resource type="PackedScene" uid="uid://d4hi31apdg2mu" path="res://abertura.tscn" id="1_3p30l"]
+[ext_resource type="Script" path="res://principal.gd" id="1_dl8nq"]
+[ext_resource type="PackedScene" uid="uid://di5dhei514os3" path="res://configuração.tscn" id="2_wbw6v"]
+
+[node name="Principal" type="Node2D"]
+script = ExtResource("1_dl8nq")
+
+[node name="Abertura" parent="." instance=ExtResource("1_3p30l")]
+position = Vector2(3, -6)
+
+[node name="Configuração" parent="." instance=ExtResource("2_wbw6v")]
+visible = false
+position = Vector2(4, -6)
